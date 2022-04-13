@@ -9,6 +9,7 @@ const connect = function () {
   //listner
   conn.on("connect", () => {
     console.log("We're connected!");
+    conn.write("Name: Mit");
     
   });
   // data even we get the data

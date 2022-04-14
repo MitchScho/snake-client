@@ -1,4 +1,4 @@
-const setupInput = require("./input")
+const setupInput = require("./input");
 const connect = require("./client");
 
 // setup interface to handle user input from stdin
@@ -6,5 +6,5 @@ const connect = require("./client");
 
 
 console.log("Connecting ...");
-connect();
-setupInput();
+
+setupInput(connect());

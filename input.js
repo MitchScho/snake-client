@@ -15,12 +15,11 @@ const setupInput = function(conn) {
 };
 
 const handleUserInput = function (key) {
-  //Check if CTRL + C
+   //Check if CTRL + C
   if (key === "\u0003") {
-    // CTRL + C special character code
-    //If so terminate the game
+    //If so terminate game
     process.exit();
-  }
+  }  
   if (key === "w") {
     connection.write("Move: up");
   }
